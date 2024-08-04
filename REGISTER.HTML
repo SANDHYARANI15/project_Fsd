@@ -1,0 +1,109 @@
+<html> 
+<head> 
+<title color="red">Room Booking</title> 
+<style> body { 
+background-image:url("https://www.nerdwallet.com/assets/blog/wp-content/uploads/2020/10/GettyImages-647644582-1440x864.jpg")
+;
+background-repeat: no-repeat; background-attachment: fixed; background-size: 100% 100%; 
+} 
+.reg:hover 
+{ 
+background-color: silver; 
+} 
+Button 
+{ 
+cursor: pointer; 
+} 
+</style> <script> function validateForm() 
+{ 
+var un = document.registration.uname.value; var pass = document.registration.pwd.value; var passw=document.registration.pwds.value; var gen = document.registration.gender.value; var mail = document.registration.email.value; var num = document.registration.number.value; 
+ 
+if(un=="" || un=="null") 
+{ 
+alert("please enter ur name"); document.registration.uname.focus(); return false; 
+} 
+if(pass=="" || pass=="null") 
+{ 
+alert("please enter ur password"); document.registration.pwd.focus(); return false; 
+} 
+if(passw=="" || passw=="null") 
+{ 
+alert("please enter confirm password"); document.registration.pwds.focus(); return false; 
+} 
+if(gen=="" || gen=="null") 
+{ 
+alert("Please select the gender"); document.registration.gender[0].focus(); return false; 
+} 
+if(mail=="" || mail=="null") 
+{ 
+alert("please enter ur email"); document.registration.email.focus(); return false; 
+} 
+if(num=="" || num=="null") 
+{ 
+alert("please enter your contact number"); document.registration.number.focus(); return false; 
+} 
+alert("Registration successfull"); return true; 
+} 
+</script> 
+</head> 
+<br><br> 
+<br><br> 
+<br><br> 
+<br><br> 
+<br><br><br> 
+<body> 
+<center> 
+<table align="center"> 
+    <tr> 
+        <th colspan="5"> 
+        <h1><font align="center"><i><u>Registration Form<i></u></font></h1> 
+        </th> 
+        </tr> 
+        <form name="registration" onsubmit="return validateForm();" action="store.jsp"> 
+        <tr><td> 
+        Enter your name:</td><td> <input type="text" name="uname"><br></td></tr> 
+        <tr> 
+            <td>Choose your Room:</td> 
+            <td><select name="room" > 
+           <option>Single bed Room</option>
+           <option>Double bed room</option>
+           <option >Queen room</option>
+           <option >King Room</option>
+           <option >Family Room</option>
+        </select> 
+            </td>
+            
+            </tr> 
+            <tr> 
+                 <td>Date:</td> 
+                 <td><input type="date" name="date" value="YYYY-MM-DD"></td> 
+                 </tr>
+                
+ 
+<tr> 
+<td>Choose your Gender:</td> 
+<td> 
+<input type="radio" name="gender" value="Male">Male 
+<input type="radio" name="gender" value="Female">Female<br> 
+</td> 
+</tr> 
+<tr> 
+<td>Enter your email:</td> 
+<td> <input type="text" name="email"><br></td> 
+</tr> 
+<tr> 
+<td>Enter your contact number:</td> 
+<td><input type="number" name="number"><br></td> 
+</table><br><br> 
+<input type="submit"/> 
+<button type="reset">Reset</button> 
+<button ><a href="login.html">Login</a></button>
+</center> 
+<pre>
+                                                <img src="https://d265rl6yp58lzi.cloudfront.net/assets/en/upTo70.png?262" alt="">
+</pre>
+</form> 
+
+</body> 
+</html> 
+ 
